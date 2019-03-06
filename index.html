@@ -16,16 +16,31 @@
 
 <body>
 
-    <header>
-        <h1>Trivia Game</h1>
-    </header>
+    <article id="welcome">
+
+        <header>
+            <h1>Trivia Game</h1>
+            <!-- timer -->
+        </header>
+
+        <p>You have 30 seconds to answer few questions.</p>
+        <p>Good Luck !</p>
+
+        <button id="startBtn">Start</button>
+    </article>
+
+
 
 
 
     <article id="questions">
+        <header>
+            <h1>Trivia Game</h1>
+            <div id="timer"></div>
+            <!-- timer -->
+        </header>
 
-        <div id="timer"></div>
-        <!-- timer -->
+
         <form>
             <div>
                 <h1 class="question">How many days in a leap year?</h1>
@@ -123,12 +138,27 @@
     <article id="scoreboard">
         <div>
             <h1>All Done!</h1>
-            <h2>Correct Answers: <span id="correct"></span></h2>
-            <h2>Wrong Answers: <span id="wrong"></span></h2>
-            <h2>Not Answered: <span id="noanswered"></span></h2>
+            <h2>Correct Answers: <span class="correct"></span></h2>
+            <h2>Wrong Answers: <span class="wrong"></span></h2>
+            <h2>Not Answered: <span class="noanswered"></span></h2>
             <h3><span id="message"></span></h3>
+
+            <button class="playAgain">Play Again</button>
+            <button class="exit" id="exit">Exit</button>
         </div>
 
+    </article>
+
+    <article id="loser">
+        <h1>Time's Up</h1>
+
+        <h2>Correct Answers: <span class="correct"></span></h2>
+        <h2>Wrong Answers: <span class="wrong"></span></h2>
+        <h2>Not Answered: <span class="noanswered"></span></h2>
+        <h3><span id="message"></span></h3>
+
+        <button class="playAgain">Play Again</button>
+        <button class="exit" id="exit">Exit</button>
     </article>
 
 
