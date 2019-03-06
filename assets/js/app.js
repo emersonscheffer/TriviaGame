@@ -32,11 +32,11 @@ function youLose() {
     $('.wrong').text(wrong);
     $('.noanswered').text(notAnswered);
 
-   
+
 }
 
 // Timer 
-var countDDown = 3;
+var countDDown = 30;
 $('#timer').text(countDDown);
 var timerClock;
 
@@ -64,7 +64,7 @@ $('#startBtn').on('click', function (e) {
 
 })
 
-function engine(){
+function engine() {
 
     //check selection
     function checkIfBlank(a) {
@@ -119,7 +119,7 @@ $('#buttonSubmit').on('click', function (event) {
     $('.wrong').text(wrong);
     $('.noanswered').text(notAnswered);
 
-    
+
 
     if (correct > 6) {
         message = "Well Done, I always believed in you!";
@@ -171,3 +171,9 @@ $('.exit').on('click', function () {
     correct = 0;
 })
 
+// var colors = ['#222', '#000', '#111'];
+
+
+// setInterval(function () {
+//     $('body').css('backgroundColor', colors[Math.floor(Math.random() * colors.length)])
+// }, 2000);

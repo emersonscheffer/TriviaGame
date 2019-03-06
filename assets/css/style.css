@@ -1,14 +1,28 @@
-body{
-    background-color: rgb(92, 92, 92);
+body {
+    background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
 }
+
 article {
     margin: 0 auto;
     width: 750px;
-    height: 500px;
+    height: 650px;
     background-color: rgb(230, 255, 254);
     border-radius: 10px;
     border: solid 1px #000000;
+}
+
+header h1 {
+    font-size: 40px;
+    padding: 20px;
+    background-color: black;
+    color: #ffffff;
+    width: 250px;
+    margin: 10px;
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    clear: both;
 }
 
 #timer {
@@ -20,6 +34,11 @@ article {
     left: 500px;
     top: 0px;
 }
+
+.question {
+    font-size: 26px;
+}
+
 
 p {
     line-height: 2em;
@@ -40,13 +59,19 @@ p {
 
 .question {
     clear: both;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .btn {
     float: left;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 .hbtn {
     float: left;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
-
