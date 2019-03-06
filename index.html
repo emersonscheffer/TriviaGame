@@ -1,16 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets//css/style.css">
+
 </head>
+
 <body>
-    
-    <h1>Trivia Game</h1>
-    
+
+    <header>
+        <h1>Trivia Game</h1>
+    </header>
+
+
+
+    <article id="questions">
+
+        <div id="timer"></div>
+        <!-- timer -->
+        <form>
+            <div>
+                <h1 class="question">How many days in a leap year?</h1>
+                <label class="radio">
+                    <input class="btn" type="radio" name="q1">
+                    <h2 class="hbtn">345</h2>
+                    <input class="btn" type="radio" name="q1">
+                    <h2 class="hbtn">365</h2>
+                    <input class="btn" type="radio" name="q1">
+                    <h2 class="hbtn">346</h2>
+                    <input class="btn" type="radio" name="q1">
+                    <h2 class="hbtn">366</h2>
+
+                    <h1 class="question">Wonderwall is a song by british band called</h1>
+                    <input class="btn" type="radio" name="q2">
+                    <h2 class="hbtn">The Verve</h2>
+                    <input class="btn" type="radio" name="q2">
+                    <h2 class="hbtn">Radiohead</h2>
+                    <input class="btn" type="radio" name="q2">
+                    <h2 class="hbtn">Oasis</h2>
+                    <input class="btn" type="radio" name="q2">
+                    <h2 class="hbtn">The Beatles</h2>
+
+                    <h1 class="question"> Keanu Reeves did not played a role in </h1>
+                    <input class="btn" type="radio" name="q3">
+                    <h2 class="hbtn">The Matrix</h2>
+                    <input class="btn" type="radio" name="q3">
+                    <h2 class="hbtn">John Wick</h2>
+                    <input class="btn" type="radio" name="q3">
+                    <h2 class="hbtn">Heat</h2>
+                    <input class="btn" type="radio" name="q3">
+                    <h2 class="hbtn">Constantine</h2>
+
+                    <h1 class="question">The city of Machu Picchu is located in </h1>
+                    <input class="btn" type="radio" name="q4">
+                    <h2 class="hbtn">Brazil</h2>
+                    <input class="btn" type="radio" name="q4">
+                    <h2 class="hbtn">Peru</h2>
+                    <input class="btn" type="radio" name="q4">
+                    <h2 class="hbtn">Argentina</h2>
+                    <input class="btn" type="radio" name="q4">
+                    <h2 class="hbtn">Bolivia</h2>
+
+                    <h1 class="question">Shaquille O'Neal made his sport's career playing </h1>
+                    <input class="btn" type="radio" name="q5">
+                    <h2 class="hbtn">Football</h2>
+                    <input class="btn" type="radio" name="q5">
+                    <h2 class="hbtn">Basketball</h2>
+                    <input class="btn" type="radio" name="q5">
+                    <h2 class="hbtn">Soccer</h2>
+                    <input class="btn" type="radio" name="q5">
+                    <h2 class="hbtn">Golf</h2>
+
+                    <h1 class="question">The value of Pi everybody knows. What's the value of e </h1>
+                    <input class="btn" type="radio" name="q6">
+                    <h2 class="hbtn">3.1415165454</h2>
+                    <input class="btn" type="radio" name="q6">
+                    <h2 class="hbtn">2.61828182846</h2>
+                    <input class="btn" type="radio" name="q6">
+                    <h2 class="hbtn">2.71828182846</h2>
+                    <input class="btn" type="radio" name="q6">
+                    <h2 class="hbtn">3.71828182846</h2>
+
+                    <h1 class="question">What country is not part of the UK</h1>
+                    <input class="btn" type="radio" name="q7">
+                    <h2 class="hbtn">Wales</h2>
+                    <input class="btn" type="radio" name="q7">
+                    <h2 class="hbtn">Ireland</h2>
+                    <input class="btn" type="radio" name="q7">
+                    <h2 class="hbtn">Scoltland</h2>
+                    <input class="btn" type="radio" name="q7">
+                    <h2 class="hbtn">England</h2>
+
+                    <h1 class="question">What is 325.75</h1>
+                    <input class="btn" type="radio" name="q8">
+                    <h2 class="hbtn">65.15 * 5</h2>
+                    <input class="btn" type="radio" name="q8">
+                    <h2 class="hbtn">64.03 * 6</h2>
+                    <input class="btn" type="radio" name="q8">
+                    <h2 class="hbtn">32.57 * 100</h2>
+                    <input class="btn" type="radio" name="q8">
+                    <h2 class="hbtn">none of the above</h2>
+
+                </label>
+            </div>
+
+
+            <button id="buttonSubmit">
+                <h1>Done</h1>
+            </button>
+        </form>
+
+    </article>
+
+    <article id="scoreboard">
+        <div>
+            <h1>All Done!</h1>
+            <h2>Correct Answers: <span id="correct"></span></h2>
+            <h2>Wrong Answers: <span id="wrong"></span></h2>
+            <h2>Not Answered: <span id="noanswered"></span></h2>
+            <h3><span id="message"></span></h3>
+        </div>
+
+    </article>
+
+
+
+
     <script src="./assets/js/app.js"></script>
-    
+
 </body>
+
 </html>
